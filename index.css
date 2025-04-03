@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Protest+Riot&family=Roboto:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Boldonse&family" , "Roboto";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
