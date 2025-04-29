@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Protest+Riot&family=Roboto:wght@100..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -7,11 +6,290 @@
     font-family: "Boldonse&family" , "Roboto";
   }
 
-  html {
+html {
     scroll-behavior: smooth;
   }
   
   body {
-    max-width: 100vw;
-    overflow-x: hidden;
+    max-width: 1600px;
+ 
   }
+
+  nav {
+    background-color: gray;
+  }
+
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .nav__link {
+    padding-right: 48px;
+    margin-right: 56pxpx;
+    text-decoration: none;
+    color: rgb(170, 170, 4);
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
+  }
+
+  .nav__link:hover {
+    text-decoration: underline;
+    
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .search {
+    display: flex;
+  align-items: center;
+
+  }
+
+  .search__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-bar {
+height: 42px;
+width: 280px;
+border-radius: 20px;
+font-size: 24px;
+padding-left: 12px;
+background-color: black;
+color:  rgb(215, 191, 35);
+  }
+
+  .signal {
+    width: 42px;
+    border-radius: 20px;
+  }
+
+  .search__btn {
+    background: none;
+    border: none;
+    cursor: pointer ;
+    margin-left: 8px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+
+  .container {
+    padding: 56px 0px;
+    overflow: scroll;
+  }
+  
+  .row {
+    margin: 0 auto;
+  }
+
+#filter {
+    height: 42px;
+    width: 140px;
+    margin-bottom: 40px ;
+    background-color: #0c0c0c;
+    color: black;
+    text-shadow: 0 0 2px rgb(215, 191, 35);
+    cursor: pointer;
+    position: fixed;
+    margin-left: 24px;
+    font-size: 24px;  
+}
+
+.choice {
+  background-color:  rgb(215, 191, 35);
+  color: rgb(24, 23, 23);
+ 
+}
+
+.choice:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+.landing {
+    max-width: 1600px;
+    overflow: scroll;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(Assets/Gotham\ city\ 5.png);
+    width: 100vw;
+    height: 100vh;
+}
+
+.movies {
+width:100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+  
+.movie {
+    padding: 56px;
+  }
+
+.movie__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    color: black;
+    text-shadow: 0 0 4px rgb(215, 191, 35);
+    font-size: 24px;
+    font-weight: bold;
+  
+  }
+
+ .movie__poster--wrapper {
+  margin-left: 24px;
+ }
+
+  
+
+.imdb__btn {
+    background-color: transparent;
+    color: yellow;
+    border: none;
+    width: 48px;
+    cursor: pointer;
+  }
+
+  
+.imdb__btn:hover {
+  transform: scaleX(120%);
+}
+
+.movie__poster{
+    width: 400px;
+    cursor: pointer;
+  }
+
+  .movie__poster:hover {
+    transform: scale(110%);
+  }
+
+.movie__card {
+    margin-left: 24px;
+  }
+
+  /*
+  ANIMATION
+  */
+
+  .landing__animation {
+    justify-content: center;
+    max-width: 1600px;
+    overflow: scroll;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(Assets/Batman\ and\ Joker.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.amovie__card {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  color: black;
+  text-shadow: 0 0 4px rgb(215, 191, 35);
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 1100px;
+}
+
+.amovie__poster{
+  width: 400px;
+  margin-left: 1100px;
+}
+
+/* 
+SHOWCASE
+*/
+.showcase__container {
+background-color: rgb(57, 57, 79);
+}
+
+.showcases {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .showcase {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+  }
+
+  .showcase__poster {
+    width: 600px;
+    margin-bottom: 20px;
+  }
+
+   .movie__title {
+    max-width: 660px;
+    font-weight: bold;
+    font-size: 56px;
+    color: black ;
+    margin-bottom: 24px;
+    text-shadow: 0 0 4px rgb(215, 191, 35);
+  }
+
+  .summary {
+    width: 600px;
+    font-weight: 700;
+    font-size: 28px;
+    color: black ;
+    margin-bottom: 20px;
+    text-shadow: 0 0 4px rgb(215, 191, 35);
+  }
+
+  .showcase__pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic1 {
+    max-width: 600px;
+    margin: 8px;
+  }
+
+  .pic2 {
+    max-width: 600px;
+    margin: 8px;
+  }
+  .pic3 {
+    max-width: 600px;
+    margin: 8px;
+  }
+
+
+
+ 
+
+

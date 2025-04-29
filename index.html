@@ -5,24 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman Movies</title>
     <link rel="stylesheet" href="index.css">
+    <script
+      src="https://kit.fontawesome.com/9ada813903.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="index.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="movie-list">
-            <div class="movie">
-                <div class="movie-card">
-                    <div class="movie-card__container">
-                        <h3><b>Title:</b></h3>
-                        <p><b>Year:</b>""</p>
-                        <p><b>imbID:</b>""</p>
-                        <p><b>Type:</b></p>
-                       <img class="poster" src="" alt="">
-                    </div>
-                </div>
-            </div>
+    <nav>
+        <div class="nav__container">
+          <img class="logo" src="Assets/Batman Logo 1.png" alt="" />
+          <div class="search">
+            <form class="search__wrapper" action="index.html" method="get">
+                <input class="search-bar" type="text" placeholder="search movies" name="q">
+                <button class="search__btn" type="submit"><img class="signal" src="Assets/BatmanSignalLight.png" alt=""></button>
+            </form>
+          </div>
+          <ul class="nav__links">
+            <li><a class="nav__link" href="anime.html">Animated</a></li>
+            <li><a class="nav__link nav__link--primary" href="https://www.dc.com/batman">DC Comics</a></li>
+          </ul>
         </div>
+      </div>
+      </nav>
+<div class="container landing">
+    <div class="row">
+      
+
+            
+
+                 <select id="filter" onchange="filterMovies(event)">
+                <option class="choice" value=" disabled selected">Investigate</option>
+                <option class="choice" value="RECENT_TO_VINTAGE">Recent to Vintage</option>
+                <option class="choice" value="VINTAGE_TO_RECENT">Vintage to Recent</option>
+                <option class="choice" value="RATING">Rating</option>
+            </select>
+           <div class="movies">
+       
+           </div>
     </div>
 </div>
 
